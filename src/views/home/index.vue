@@ -6,7 +6,9 @@
         <nav-menu />
       </el-aside>
       <el-container>
-        <el-main>Main</el-main>
+        <el-main>
+          <router-view />
+        </el-main>
       </el-container>
     </el-container>
   </el-container>
@@ -36,13 +38,9 @@ export default {
   background-color: #D3DCE6;
   color: #333;
   text-align: center;
-  line-height: 200px;
 }
 
 .el-main {
-  background-color: #E9EEF3;
   color: #333;
-  text-align: center;
-  line-height: 160px;
 }
 </style>

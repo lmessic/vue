@@ -16,7 +16,14 @@ export default new Router({
     {
       path: '*',
       redirect: '/home',
-      component: home
+      component: home,
+      children: [
+        {
+          path: '',
+          name: '文学作品',
+          component: () => import('@/views/literary')
+        }
+      ]
     },
     {
       path: '/home',
